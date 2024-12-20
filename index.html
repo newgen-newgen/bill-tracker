@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Monthly Rent and Electricity Bill Tracker</h1>
+    </header>
+    <main>
+        <section class="form-section">
+            <form id="bill-form">
+                <label for="month">Month:</label>
+                <input type="text" id="month" name="month" required>
+                
+                <label for="rent">Rent:</label>
+                <input type="number" id="rent" name="rent" required>
+                
+                <label for="electricity">Electricity Bill:</label>
+                <input type="number" id="electricity" name="electricity" required>
+                
+                <button type="submit">Add Bill</button>
+            </form>
+        </section>
+
+        <section class="bill-records">
+            <h2>Bill Records</h2>
+            <table id="bill-table">
+                <thead>
+                    <tr>
+                        <th>Month</th>
+                        <th>Rent</th>
+                        <th>Electricity</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Bill Tracker</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
